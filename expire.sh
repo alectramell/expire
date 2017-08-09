@@ -34,5 +34,6 @@ EXPIRATION() {
 
 while [ $ACTIVE = "true" ]
 do
+	STATUS=$(curl -s https://raw.githubusercontent.com/alectramell/expire/master/status.txt)
 	EXPIRATION
 done
