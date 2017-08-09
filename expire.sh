@@ -21,12 +21,12 @@ EXPIRATION() {
 	if [ $STATUS != 1 ]
 	then
 		echo "..${red}EXPIRED${reset}.." | pv -qL 10
-		sleep 30
+		sleep 10
 		clear
 		bash $(pwd)/expire.sh
 	else
 		echo "..${green}ACTIVE${reset}.." | pv -qL 10
-		sleep 30
+		sleep 10
 		clear
 		bash $(pwd)/expire.sh
 	fi	
